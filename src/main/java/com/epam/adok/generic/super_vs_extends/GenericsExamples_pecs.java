@@ -36,6 +36,12 @@ class AsianApple extends Apple {
     }
 }
 
+/**
+ 'PECS' is from the collection's point of view. If you are only pulling items from a generic collection, it is a producer
+ and you should use extends; if you are only stuffing items in, it is a consumer and you should use super. If you do both
+ with the same collection, you shouldn't use either extends or super.
+ */
+
 public class GenericsExamples_pecs {
     public static void main(String[] args) {
 
