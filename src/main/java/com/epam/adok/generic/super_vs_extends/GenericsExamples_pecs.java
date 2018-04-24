@@ -67,6 +67,11 @@ public class GenericsExamples_pecs {
             System.out.println(fruit);
         }
 
+        /**
+         <? extends Fruit> wildcard tells the compiler that we’re dealing with a subtype of the type Fruit, but we cannot
+         know which fruit as there may be multiple subtypes. Since there’s no way to tell, and we need to guarantee type safety
+         (invariance), you won’t be allowed to put anything inside such a structure.
+         */
 //        basketExtends.add(new Apple()); //Compile time error
 //        basketExtends.add(new Fruit()); //Compile time error
 
